@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        .div1{
+            position: relative;
+            text-align: center;
+            color: aliceblue;
+            margin-top: 0px;
+        }
+        .div2{
+            position:absolute;
+            top: 1px;
+        }
+        div{
+            text-align: center;
+            margin-top: 100px;
+        }
+        body{
+            background-color: white;
+        }
+       h1{
+        text-align:center;
+        font-size: 500%;
+        padding: 8pc;
+        color: black;
+        font-style: bold;
+        margin-top: 0px;
+       }
+       th,td{
+        padding-right: 5%;
+       }
+       tr{
+        padding: 5%;
+       }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:0px;
+            size: 5%;
+            width: 50%;
+            border-width: 49px;
+            font-size: 200%;
+            border-color: black;
+            color: black;
+            ttext-align: center;
+            
+            
+        }
+        button{
+            font-size: larger;
+            text-align: center;
+        }
+       
+    </style>
+    </head>
+    <body>
+        <div class="div1">
+      
+      <img src="https://image.shutterstock.com/image-photo/credit-card-close-shot-selective-260nw-567634105.jpg" width="2000px" height="2000px">
+         <div class="div2">
+        <h1>credit card default prediction</h1>
+        <form action="/predict" method="post">
+        <table class="table" >
+            <tr >
+                <th>Gender</th>
+                <th >Marriage</th>
+                <th>Age</th>
+                <th >Bill-amt</th>
+                <th >Education</th>
+                <th>PayDelay</th>
+             
+            </tr>
+            
+            <tr >
+                <td>
+
+                    <select name="sex" id="sex">
+                      <option value="1">male</option>
+                      <option value="2">female</option>
+                    
+                    </select></td>
+                    <td >
+
+                        <select name="marriage" id="marriage">
+                          <option value="1">yes</option>
+                          <option value="2">no</option>
+
+                        </select ></td>
+                        <td><input type="number" name="age"  id="age"></td>
+                        <td ><input type="number" name="bill_amt" id="bill_amt"></td>
+                            <td >
+
+                        <select name="education" id="education">
+                          <option value="1">school</option>
+                          <option value="2">graduate</option>
+                          <option value="3">post graduate</option>
+                          <option value="4">others</option>
+                        </select>
+                            </td>
+                        <td>
+                        <select name="pay1" id="pay1">
+                          <option value="-1">pay duly</option>
+                          <option value="1">payment delay for one month</option>
+                          <option value="2">payment delay for two months</option>
+                          <option value="3">payment delay for three months</option>
+                            <option value="4">payment delay more than three months</option>
+
+
+                        </select></td>
+            </tr>
+        </table>
+        <div>
+            <button type="submit" value="submit">submit</button>
+         </div>
+
+</form>
+</div>
+</div>
+
+    </body>
+</html>
